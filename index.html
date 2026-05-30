@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/Wilayah Geografis Yogyakarta.png" />
+    <title>Beranda</title>
+    <meta
+      name="description"
+      content="Website informasi tempat wisata populer di Yogyakarta serta artikel seputar budaya dan pariwisata."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body data-page="beranda">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/Logo Yogyakarta.png" alt="Logo Yogyakarta" />
+            <span class="font-jogja" style="color: #E20613 !important; font-size: 30px !important;">
+              Jogja Istimewa</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-label="Buka menu">
+            ☰
+          </button>
+          <div class="nav-links" role="navigation">
+            <a href="index.html" data-page="beranda">Beranda</a>
+            <a href="profil.html" data-page="profil">Profil</a>
+            <a href="artikel.html" data-page="artikel">Artikel</a>
+            <a href="bukutamu.html" data-page="bukutamu">Buku Tamu</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="card hero-copy reveal">
+            <div class="kicker">
+            </div>
+            <h1>Website Wisata Yogyakarta</h1>
+            <p>
+              Website ini menyediakan informasi tempat wisata populer di Yogyakarta
+              serta artikel menarik seputar budaya dan pariwisata.
+            </p>
+            <div class="hero-actions">
+              <button class="btn" type="button" id="btnReadMoreHome">
+                Baca Selengkapnya
+              </button>
+              <a class="btn" href="artikel.html">Lihat Artikel</a>
+            </div>
+            <div id="homeMoreText" style="display: none; margin-top: 14px">
+              <p>
+                Yogyakarta dikenal sebagai “Kota Pelajar” sekaligus kota budaya.
+                Mulai dari jalan Malioboro, kemegahan Candi Prambanan,
+                hingga pesona Pantai Parangtritis. Semua ini punya cerita yang
+                layak kamu ulik.
+              </p>
+            </div>
+          </div>
+          <div class="slider" aria-label="Slider foto wisata">
+            <div class="slide is-active">
+              <img src="images/HeHa Sky View.webp" alt="HeHa Sky View"/>
+              <div class="slide-overlay" aria-hidden="true"></div>
+              <div class="slide-caption">
+                <div>
+                  <h3>HeHa Sky View</h3>
+                  <p>Pemandangan indah dari ketinggian.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/malioboro.png" alt="Suasana Malioboro" />
+              <div class="slide-overlay" aria-hidden="true"></div>
+              <div class="slide-caption">
+                <div>
+                  <h3>Malioboro</h3>
+                  <p>Ikon wisata belanja & ribuan pejalan kaki.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Candi Prambanan.jpeg" alt="Candi Prambanan di Yogyakarta" />
+              <div class="slide-overlay" aria-hidden="true"></div>
+              <div class="slide-caption">
+                <div>
+                  <h3>Candi Prambanan</h3>
+                  <p>Warisan budaya megah dengan detail arsitektur memukau.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="images/Pantai Parangtritis.jpeg" alt="Pantai Parangtritis" />
+              <div class="slide-overlay" aria-hidden="true"></div>
+              <div class="slide-caption">
+                <div>
+                  <h3>Pantai Parangtritis</h3>
+                  <p>Sunset, angin pantai, dan pasir yang luas.</p>
+                </div>
+              </div>
+            </div>
+             <div class="slide">
+              <img src="images/Tebing Breksi.jpg" alt="Tebing Breksi" />
+              <div class="slide-overlay" aria-hidden="true"></div>
+              <div class="slide-caption">
+                <div>
+                  <h3>Tebing Breksi</h3>
+                  <p>Bekas tambang batu kapur yang disulap menjadi destinasi artistik.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-dots" aria-label="Kontrol slide"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Eksplorasi Yogyakarta</h2>
+          <p class="section-subtitle reveal">
+            Mulai dari rekomendasi tempat populer hingga acara tahunan
+            di Yogyakarta.
+          </p>
+          <div class="grid-2" style="margin-top: 18px">
+            <div class="card block reveal">
+              <h3>Kategori Wisata</h3>
+              <p>
+                Yogyakarta punya banyak pilihan wisata. Berikut tempat yang tidak 
+                boleh kamu lewatkan:
+              </p>
+              <details style="margin-top: 8px">
+                <summary>Alam</summary>
+                <ul style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  <li>Tebing Breksi</li>
+                  <li>Pantai Parangtritis</li>
+                  <li>Gunung Merapi</li>
+                </ul>
+              </details>
+               <details style="margin-top: 8px">
+                <summary>Budaya</summary>
+                <ul style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  <li>Kraton Yogyakarta</li>
+                  <li>Malioboro</li>
+                  <li>Candi Prambanan</li>
+                </ul>
+              </details>
+               <details style="margin-top: 8px">
+                <summary>Belanja</summary>
+                <ul style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  <li>Pasar Beringharjo</li>
+                  <li>Malioboro Mall</li>
+                  <li>Teras Malioboro</li>
+                </ul>
+              </details>
+            </div>
+            <div class="card block reveal">
+              <h3>Acara Tahunan</h3>
+              <p>
+                Yogyakarta juga punya banyak acara tahunan yang menarik untuk
+                dikunjungi. Berikut beberapa di antaranya:
+              </p>
+              <details style="margin-top: 8px">
+                <summary>Festival Kesenian Yogyakarta (FKY)</summary>
+                <img src="images/Festival Kesenian Yogyakarta.jpg" alt="Festival Kesenian Yogyakarta" style="width: 100%; margin-top: 10px; border-radius: 6px"/>
+                <p style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  <a href="https://id.wikipedia.org/wiki/Festival_Kesenian_Yogyakarta" target="_blank"><strong>Festival seni terbesar di Yogyakarta</strong></a> yang menampilkan pertunjukan seni tradisional dan modern.
+                </p>
+              </details>
+              <details style="margin-top: 8px">
+                <summary>Grebeg Maulud/Sekaten</summary>
+                <img src="images/Grebeg Maulud Yogya.jpg" alt="Grebeg Maulud" style="width: 100%; margin-top: 10px; border-radius: 6px"/>
+                <p style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  Perayaan Maulid Nabi Muhammad SAW dengan tradisi <a href="https://budaya.jogjaprov.go.id/artikel/detail/16-grebeg" target="_blank"><strong>Grebeg</strong></a> yang unik.
+                </p>
+              </details>
+              <details style="margin-top: 8px">
+                <summary>Jogja International Heritage Walk</summary>
+                <img src="images/Jogja International Heritage Walk.jpg" alt="Jogja International Heritage Walk" style="width: 100%; margin-top: 10px; border-radius: 6px"/>
+                <p style="margin: 6px 0 0; color: rgba(255,255,255,.78)">
+                  <a href="https://id.wikipedia.org/wiki/Jogja_International_Heritage_Walk" target="_blank"><strong>Jogja International Heritage Walk</strong></a> adalah festival pertunjukan jalanan internasional yang menampilkan seniman dari berbagai negara.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year"></span> Company. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

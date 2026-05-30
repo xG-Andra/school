@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/Wilayah Geografis Yogyakarta.png" />
+    <title>Buku Tamu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body data-page="bukutamu">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/Logo Yogyakarta.png" alt="Logo Yogyakarta" />
+            <span class="font-jogja" style="color: #E20613 !important; font-size: 30px !important;">
+              Jogja Istimewa</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-label="Buka menu">
+            ☰
+          </button>
+          <div class="nav-links" role="navigation">
+            <a href="index.html" data-page="beranda">Beranda</a>
+            <a href="profil.html" data-page="profil">Profil</a>
+            <a href="artikel.html" data-page="artikel">Artikel</a>
+            <a href="bukutamu.html" data-page="bukutamu">Buku Tamu</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title reveal">Buku Tamu</h1>
+          <p class="section-subtitle reveal">
+            Silakan isi form berikut untuk memberi pesan & saran.
+          </p>
+          <div class="grid-2" style="margin-top: 18px">
+            <div class="card form reveal">
+              <form id="guestbookForm" novalidate>
+                <div class="fields">
+                  <div class="field" id="fieldName">
+                    <div class="label">Nama</div>
+                    <input class="control" id="name" name="name" type="text" placeholder="Isi Nama" />
+                    <div class="error" aria-live="polite"></div>
+                  </div>
+                  <div class="field" id="fieldEmail">
+                    <div class="label">Email</div>
+                    <input class="control" id="email" name="email" type="email" placeholder="nama@email.com" />
+                    <div class="error" aria-live="polite"></div>
+                  </div>
+                  <div class="field full" id="fieldMessage">
+                    <div class="label">Pesan</div>
+                    <textarea
+                      class="control"
+                      id="message"
+                      name="message"
+                      placeholder="Tulis pesan atau saran…"
+                    ></textarea>
+                    <div class="error" aria-live="polite"></div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap">
+                  <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+                  <a class="btn" href="artikel.html">Baca Artikel</a>
+                </div>
+                <div class="toast" id="toast" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+            <div class="card guestbook reveal">
+              <h3><strong>Pesan Pengunjung</strong></h3>
+              <div class="messages" id="messages"></div>
+              <div style="margin-top: 10px; color: rgba(255,255,255,.60); font-size: 12px">
+                *Pesan yang masuk akan ditampilkan di sini.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year"></span> Company. All rights reserved.</div>
+        <div><a href="index.html">Kembali ke Beranda</a></div>
+      </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

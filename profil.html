@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/Wilayah Geografis Yogyakarta.png" />
+    <title>Profil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body data-page="profil">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="images/Logo Yogyakarta.png" alt="Logo Yogyakarta" />
+            <span class="font-jogja" style="color: #E20613 !important; font-size: 30px !important;">
+              Jogja Istimewa</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-label="Buka menu">
+            ☰
+          </button>
+          <div class="nav-links" role="navigation">
+            <a href="index.html" data-page="beranda">Beranda</a>
+            <a href="profil.html" data-page="profil">Profil</a>
+            <a href="artikel.html" data-page="artikel">Artikel</a>
+            <a href="bukutamu.html" data-page="bukutamu">Buku Tamu</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title reveal">Profil Pembuat Website</h1>
+          <p class="section-subtitle reveal">
+            Halaman ini menampilkan identitas pembuat website.
+          </p>
+          <div class="profile-wrap" style="margin-top: 18px">
+            <!-- Foto profil -->
+
+            <div class="avatar reveal" aria-label="Foto profil">
+              <!-- Placeholder aman: ganti dengan fotomu jika diperlukan -->
+
+              <div class="initials" title="Ganti dengan foto profil">AA</div>
+            </div>
+            <div class="card profile-card reveal">
+              <table class="table" aria-label="Data profil">
+                <tbody>
+                  <tr>
+                    <th>Nama</th>
+                    <td>Undefined</td>
+                  </tr>
+                  <tr>
+                    <th>Gender</th>
+                    <td>Undefined</td>
+                  </tr>
+                  <tr>
+                    <th>Sekolah</th>
+                    <td>Undefined</td>
+                  </tr>
+                  <tr>
+                    <th>Kelas</th>
+                    <td>Undefined</td>
+                  </tr>
+                  <tr>
+                    <th>Hobi</th>
+                    <td>Undefined</td>
+                  </tr>
+                  <tr>
+                    <th>Skill</th>
+                    <td>Undefined</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="year"></span> Company. All rights reserved.</div>
+        <div><a href="index.html">Kembali ke Beranda</a></div>
+      </div>
+    </footer>
+    <script src="assets/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
